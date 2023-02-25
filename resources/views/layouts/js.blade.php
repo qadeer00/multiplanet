@@ -3,7 +3,7 @@
    <script src="{{asset('frontend/scripts/quantum-aldar.js')}}"></script>
    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
    
-   <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
+   <script src="{{asset('https://assets.juicer.io/embed.js')}}" type="text/javascript"></script>
 
 
     <!-- Facebook Pixel Code -->

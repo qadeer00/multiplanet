@@ -1,33 +1,5 @@
-
-
-<!DOCTYPE html>
-<html lang="EN">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    
-    <title>Real Estate and Property Management Company in UAE - Provis</title>
-    <meta name="description" content="Provis provides world-class real estate and property management solutions including sales, leasing and lifestyle services with innovative cutting-edge technology.">
-    <meta name="keywords">
-    <meta property="og:title" content="Real Estate and Property Management Company in UAE - Provis">
-    <meta property="og:description" content="Provis provides world-class real estate and property management solutions including sales, leasing and lifestyle services with innovative cutting-edge technology.">
-
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://www.provis.ae/images/og-image.jpg" />
-    <meta property="og:url" content="https://www.provis.ae/en/" />
-    <link rel="stylesheet" type="text/css" href="{{asset('frontend/styles/main.css')}}" />
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400,500,700,900" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet" />
-
-
-
-
-
-  
- </head>
+@extends('layouts.main')
+@section('main-container')
 <body class="home ">
 
 
@@ -47,16 +19,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
 <section class="consent-cookie" >
     <div class="container cookie-row justify-content-md-center">
-        <div class="col-md-7 col-12"><p>We use cookies to offer you a better user experience. By continuing to use this website, you consent to the use of cookies in accordance with our <a data-udi="umb://document/4e2e4f21eb2c4ccd9150b4337641b9b0" href="/en/privacy-policy" title="Privacy Policy">Privacy Policy.</a></p></div>
+        <div class="col-md-7 col-12"><p>We use cookies to offer you a better user experience. By continuing to use this website, you consent to the use of cookies in accordance with our <a data-udi="umb://document/4e2e4f21eb2c4ccd9150b4337641b9b0" href="{{route('privacy')}}" title="Privacy Policy">Privacy Policy.</a></p></div>
         <div class="col-md-2 col-5 text-center"><button class="accept-cookies" type="button"><span class="d-flex justify-content-center align-content-center">Accept</span></button></div>
         <div class="col-md-3 col-7 text-center  d-inline-flex align-items-center">
-            <a class="reject-cookies" href="en/privacy-policy">
+            <a class="reject-cookies" href="{{route('privacy')}}">
 No, I want more info
             </a>
         </div>
     </div>
 </section>
-@include('layouts.header')
+
 
 <!-- Header end -->
 
@@ -65,7 +37,7 @@ No, I want more info
 <div class="container container-header text-center" >
     <div class="row" >
         <div id="hero-carousel" class="owl-carousel owl-theme" >
-            <div class="item item-slide" style="background-image: url('frontend/images/provis-mobile-application-2.jpg')">
+            <div class="item item-slide" style="background-image: url('{{asset('frontend/images/provis-mobile-application-2.jpg')}}')">
 <div class="opaque-bg"></div>
 <div class="container">
  <h3>
@@ -74,16 +46,16 @@ No, I want more info
  <a href="the-provis-app-living-made-easier" rel="noopener noreferrer">Download now!</a>
 </div>
             </div>
-            <div class="item item-slide" style="background-image: url('frontend/images/sales-and-leasing-carousel.jpg')">
+            <div class="item item-slide" style="background-image: url('{{asset('frontend/images/sales-and-leasing-carousel.jpg')}}')">
 <div class="opaque-bg"></div>
 <div class="container">
  <h3>
      Expertise you can trust
  </h3>
- <a href="leasing.html" rel="noopener noreferrer">Sales &amp; Leasing</a>
+ <a href="{{route('leasing')}}" rel="noopener noreferrer">Sales &amp; Leasing</a>
 </div>
             </div>
-            <div class="item item-slide" style="background-image: url('frontend/images/background-consultancy.jpg')">
+            <div class="item item-slide" style="background-image: url('{{asset('frontend/images/background-consultancy.jpg')}}')">
 <div class="opaque-bg"></div>
 <div class="container">
  <h3>
@@ -92,7 +64,7 @@ No, I want more info
  <a href="consultancy-services.html" rel="noopener noreferrer">Consultancy Services</a>
 </div>
             </div>
-            <div class="item item-slide" style="background-image: url('frontend/images/propertymanagement-background-hero.jpg')">
+            <div class="item item-slide" style="background-image: url('{{asset('frontend/images/propertymanagement-background-hero.jpg')}}')">
 <div class="opaque-bg"></div>
 <div class="container">
  <h3>
@@ -101,7 +73,7 @@ No, I want more info
  <a href="property-management.html" rel="noopener noreferrer">Property Management</a>
 </div>
             </div>
-            <div class="item item-slide" style="background-image: url('frontend/images/ownersassociation-background-hero.jpg')">
+            <div class="item item-slide" style="background-image: url('{{asset('frontend/images/ownersassociation-background-hero.jpg')}}')">
 <div class="opaque-bg"></div>
 <div class="container">
  <h3>
@@ -110,7 +82,7 @@ No, I want more info
  <a href="owners-association.html" rel="noopener noreferrer">Owners’ Association</a>
 </div>
             </div>
-            <div class="item item-slide" style="background-image: url('frontend/images/clubhouse-background-hero2.jpg')">
+            <div class="item item-slide" style="background-image: url('{{asset('frontend/images/clubhouse-background-hero2.jpg')}}')">
 <div class="opaque-bg"></div>
 <div class="container">
  <h3>
@@ -476,7 +448,7 @@ Download Now
         <h4>Associated Services</h4>
     </div>
 </section>
-<section class="container-fluid container-custom associated-services" style=" background-image: url('frontend/images/associated-services.png')">
+<section class="container-fluid container-custom associated-services" style=" background-image: url('{{asset('frontend/images/associated-services.png')}}')">
     <div class="row">
         <div class="col-12">
             <div class="container">
@@ -498,56 +470,5 @@ Download Now
 
 
 
-<!-- Sign up newsletter start -->
-<div class="modal fade" id="signup-email" tabindex="-1" role="dialog" aria-labelledby="signup-email" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-<h5 class="modal-title" id="exampleModalLongTitle">Sign up for email alerts</h5>
-<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="zmdi zmdi-close close"></i></button>
-            </div>
-            <div class="modal-body">
-<form action="/umbraco/api/GenericForms/EmailAlertRequest" method="POST" id="modal-signup-newsletter-form">
-    <input name="__RequestVerificationToken" type="hidden" value="Qe9QHkJN3RgXtCutDoMHWU2WoR11k_2XItb2TAOeTRKNIQi3jpVDhTc51NTL1fB0M1ZAFOr56ze43IcvT14Hb8HUv0iin6tTc8JWxOwvDJQ1" />
-    <input type="hidden" name="language" id="language" value="en">
-    <div class="row">
-        <div class="col-12 error-message">Field(s) highlighted in red are required</div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 form-group">
-            <input type="text" name="firstName" id="firstName" placeholder="First name" data-required="not-empty">
-        </div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 form-group">
-            <input type="text" name="lastName" id="lastName" placeholder="Last name" data-required="not-empty">
-        </div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 form-group">
-            <input type="text" name="email" id="email" placeholder="Email address" data-required="email">
-        </div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 form-group">
-            <input type="number" maxlength="15" name="phoneNumber" id="phoneNumber" placeholder="Phone number" data-required="phone">
-        </div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="g-recaptcha" data-sitekey="6LckcJMUAAAAAPz5kG81NIX40twmdTvHOUiMdIqM"></div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-4 offset-md-4 offset-lg-4 col-lg-4 form-group">
-            <button type="submit" class="newsletter-submit">Register</button>
-        </div>
-    </div>
-</form>
-<div class="col-12 signup-success">
-    <h4>Thank you for your message</h4>
-    <p>Your message has been submitted to our team.</p>
-</div>
-<div class="col-12 signup-error">
-    <h4>An error occurred while processing your request.</h4>
-</div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Sign up newsletter end -->
-<!-- Footer start -->
-@include('layouts.footer')
-<!-- Footer end -->
- @include('layouts.js')
 
-</body>
-</html>
+@endsection

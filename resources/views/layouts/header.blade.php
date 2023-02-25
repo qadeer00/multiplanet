@@ -1,8 +1,36 @@
-<div  style="background-image: url('frontend/images/navbar-background-after.png'); height:600px;">
+
+
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <title>Real Estate and Property Management Company in UAE - Provis</title>
+    <meta name="description" content="Provis provides world-class real estate and property management solutions including sales, leasing and lifestyle services with innovative cutting-edge technology.">
+    <meta name="keywords">
+    <meta property="og:title" content="Real Estate and Property Management Company in UAE - Provis">
+    <meta property="og:description" content="Provis provides world-class real estate and property management solutions including sales, leasing and lifestyle services with innovative cutting-edge technology.">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.provis.ae/images/og-image.jpg" />
+    <meta property="og:url" content="https://www.provis.ae/en/" />
+    <link rel="stylesheet" type="text/css" href="{{asset('frontend/styles/main.css')}}" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400,500,700,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet" />
+   
+  
+
+  
+ </head>
+<div  style="background-image: url('{{asset('frontend/images/navbar-background-after.png')}}'); height:600px;">
 <nav class="navbar navbar-expand-lg navbar-light" >
    
     <div class="container" >
-        <a class="navbar-brand" href="#"><img src="frontend/images/logo.png" alt="Provis"></a>
+        <a class="navbar-brand" href="{{route('home.index')}}"><img src="{{asset('frontend/images/logo.png')}}" alt="Provis"></a>
         <div class="call-us-mobile">
             <a href="tel:600-505056">Call us <i class="zmdi zmdi-phone"></i> <b>600-505056</b></a>
         </div>
@@ -42,39 +70,39 @@
     <li class="nav-item dropdown container-width">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Who we are <i class="zmdi zmdi-chevron-down d-block d-lg-none"></i></a>
  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-     <a class="dropdown-item icon-text" href="about-us.html"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>About Us</span> </a>
-     <a class="dropdown-item icon-text" href="our-vision-and-mission.html"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Our Vision and Mission</span> </a>
-     <a class="dropdown-item icon-text" href="corporate-social-responsibility.html"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Corporate Social Responsibility</span> </a>
-     <a class="dropdown-item icon-text" href="our-clients.html"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Our Clients</span> </a>
-     <a class="dropdown-item icon-text" href="leadership-team.html"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Leadership Team</span> </a>
-     <a class="dropdown-item icon-text" href="our-values.html"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Our Values</span> </a>
+     <a class="dropdown-item icon-text" href="{{route('about')}}"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>About Us</span> </a>
+     <a class="dropdown-item icon-text" href="{{route('vision')}}"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Our Vision and Mission</span> </a>
+     <a class="dropdown-item icon-text" href="{{route('corporate-social')}}"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Corporate Social Responsibility</span> </a>
+     <a class="dropdown-item icon-text" href="{{route('our-client')}}"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Our Clients</span> </a>
+     <a class="dropdown-item icon-text" href="{{route('leader-team')}}"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Leadership Team</span> </a>
+     <a class="dropdown-item icon-text" href="{{route('our-values')}}"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Our Values</span> </a>
             </div>
     </li>
     <li class="nav-item dropdown container-width" >
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our services <i class="zmdi zmdi-chevron-down d-block d-lg-none"></i></a>
  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-     <a class="dropdown-item" href="leasing.html"><span class="title">Leasing</span> <span class="description">Provis delivers market-leading leasing solutions that you can trust.</span> <span class="sub-link"><i class="zmdi zmdi-long-arrow-right"></i> View service</span> </a>
-     <a class="dropdown-item" href="consultancy-services.html"><span class="title">Consultancy Services</span> <span class="description">Our development design review service is a highly technical and critical aspect of building management.</span> <span class="sub-link"><i class="zmdi zmdi-long-arrow-right"></i> View service</span> </a>
-     <a class="dropdown-item" href="property-management.html"><span class="title">Property Management</span> <span class="description">Provis makes property ownership easy and delivers outstanding returns on your property investment.</span> <span class="sub-link"><i class="zmdi zmdi-long-arrow-right"></i> View service</span> </a>
-     <a class="dropdown-item" href="owners-association.html"><span class="title">Owners&#39; Association</span> <span class="description">Provis provides bespoke Owners’ Association and Master Community management solutions that serve all the needs of your property and tenants.</span> <span class="sub-link"><i class="zmdi zmdi-long-arrow-right"></i> View service</span> </a>
-     <a class="dropdown-item" href="clubhouse-and-lifestyle.html"><span class="title">Clubhouse and Lifestyle</span> <span class="description">Provis boosts your returns by keeping your communities active and engaged.</span> <span class="sub-link"><i class="zmdi zmdi-long-arrow-right"></i> View service</span> </a>
+     <a class="dropdown-item" href="{{route('leasing')}}"><span class="title">Leasing</span> <span class="description">Provis delivers market-leading leasing solutions that you can trust.</span> <span class="sub-link"><i class="zmdi zmdi-long-arrow-right"></i> View service</span> </a>
+     <a class="dropdown-item" href="{{route('consultency-services')}}"><span class="title">Consultancy Services</span> <span class="description">Our development design review service is a highly technical and critical aspect of building management.</span> <span class="sub-link"><i class="zmdi zmdi-long-arrow-right"></i> View service</span> </a>
+     <a class="dropdown-item" href="{{route('property-management')}}"><span class="title">Property Management</span> <span class="description">Provis makes property ownership easy and delivers outstanding returns on your property investment.</span> <span class="sub-link"><i class="zmdi zmdi-long-arrow-right"></i> View service</span> </a>
+     <a class="dropdown-item" href="{{route('owner-association')}}"><span class="title">Owners&#39; Association</span> <span class="description">Provis provides bespoke Owners’ Association and Master Community management solutions that serve all the needs of your property and tenants.</span> <span class="sub-link"><i class="zmdi zmdi-long-arrow-right"></i> View service</span> </a>
+     <a class="dropdown-item" href="{{route('clubhouse')}}"><span class="title">Clubhouse and Lifestyle</span> <span class="description">Provis boosts your returns by keeping your communities active and engaged.</span> <span class="sub-link"><i class="zmdi zmdi-long-arrow-right"></i> View service</span> </a>
             </div>
     </li>
         <li class="nav-item separator"></li>
     <li class="nav-item dropdown container-width">
             <a class="nav-link" href="">Destinations</a>
  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-     <a class="dropdown-item icon-text" href="yas-island.html"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Yas Island</span> </a>
-     <a class="dropdown-item icon-text" href="saadiyat-island.html"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Saadiyat Island</span> </a>
-     <a class="dropdown-item icon-text" href="al-raha-beach.html"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Al Raha Beach</span> </a>
-     <a class="dropdown-item icon-text" href="al-reem-island.html"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Al Reem Island</span> </a>
+     <a class="dropdown-item icon-text" href="{{route('yas-island')}}"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Yas Island</span> </a>
+     <a class="dropdown-item icon-text" href="{{route('saadiyat-island')}}"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Saadiyat Island</span> </a>
+     <a class="dropdown-item icon-text" href="{{route('al-rah-beach')}}"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Al Raha Beach</span> </a>
+     <a class="dropdown-item icon-text" href="{{route('al-reem-island')}}"><i class="zmdi zmdi-long-arrow-right d-none d-lg-inline-block"></i> <span>Al Reem Island</span> </a>
             </div>
     </li>
     <li class="nav-item ">
-            <a class="nav-link" href="media.html">Media</a>
+            <a class="nav-link" href="{{route('media')}}">Media</a>
          </li>
     <li class="nav-item ">
-            <a class="nav-link" href="contact-us.html">Contact us</a>
+            <a class="nav-link" href="{{route('contact-us')}}">Contact us</a>
          </li>
         <li class="nav-item separator"></li>
 <li class="nav-item dropdown language d-none d-lg-flex">
@@ -88,3 +116,4 @@
         </div>
     </div>
 </nav>
+{{-- @include('layouts.js') --}}

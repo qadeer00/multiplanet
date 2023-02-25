@@ -1,11 +1,13 @@
+
+@include('layouts.js')
 <footer class="container-fluid container-custom">
     <div class="row">
         <div class="col-12 col-md-5 col-lg-4">
             <p>Email subscriptions</p>
             <a href="#" target="_blank" rel="noopener noreferrer" class="signup-email" data-toggle="modal" data-target="#signup-email">Sign up for email alerts</a>
             <div class="app-links">
-        <a href="https://apps.apple.com/us/app/provis/id1498747800" target="_blank"><img src="frontend/images/app-app-store-en.svg" alt="Provis app" /></a>
-        <a href="https://play.google.com/store/apps/details?id=ae.provis.myportal" target="_blank"><img src="frontend/images/app-play-store-en.svg" alt="Provis app" /></a>
+        <a href="https://apps.apple.com/us/app/provis/id1498747800" target="_blank"><img src="{{asset('frontend/images/app-app-store-en.svg')}}" alt="Provis app" /></a>
+        <a href="https://play.google.com/store/apps/details?id=ae.provis.myportal" target="_blank"><img src="{{asset('frontend/images/app-play-store-en.svg')}}" alt="Provis app" /></a>
 
             </div>
         </div>

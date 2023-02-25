@@ -16542,7 +16542,7 @@ footer {
       padding-right: 10px; }
 
 .corporate-social-responsibility .our-solutions.container-fluid.container-custom {
-  background-image: url(images/our-solutions.png);
+  background-image: url(frontend/images/our-solutions.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
